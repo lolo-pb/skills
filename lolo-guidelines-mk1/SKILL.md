@@ -64,6 +64,9 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 whenever you reference code explicitly say where the code is, file and line.
 
 Do not add, commit or push anything with git unless explicitly asked to.
+
+Layer separation is key, there should be clear responsibilities for each file and layers should be discussed and noted in the project notes.
+
 ---
 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
