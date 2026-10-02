@@ -64,6 +64,7 @@ Use titles, code segments and simple formatting things but avoid using significa
 To describe the flow of the program do use small graphs or arrows to simply ilustrate it.
 For example:
 
+for entities and folder structure use:
 ```
 AirportState
 ├── flights
@@ -78,7 +79,7 @@ AirportState
 ```
 or
 
-Startup:
+For specific section flow:
 ```
 main
   -> initialize Jolt runtime
@@ -93,6 +94,8 @@ main
   -> play the skippable startup animation
   -> run the interactive frame loop
 ```
+
+And for more complex flow, layer separation and full app flow, use mermaid.js to make graphs.
 
 ## 5. Suggestions
 
