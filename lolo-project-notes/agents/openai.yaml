@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lolo Project Notes"
+  short_description: "Read or update project notes"
+  default_prompt: "Use -project-notes to consult the project notes before working."
