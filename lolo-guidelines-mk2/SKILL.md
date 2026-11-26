@@ -1,5 +1,5 @@
 ---
-name: lolo-guidelines-mk1
+name: lolo-guidelines-mk2
 description: "Use when writing, editing, reviewing, or refactoring code to follow Lolo's general agent workflow: state assumptions, surface ambiguity, prefer simple scoped implementations, avoid speculative abstractions, make surgical changes, and verify work against clear success criteria."
 ---
 
@@ -59,13 +59,20 @@ For multi-step tasks, state a brief plan:
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
 
-## 5. Preferences
+## 5. Layers, ownership and responsibility
+
+This aplies mainly when creating new files and when deciding where new code goes
+
+New file names should be very clear on what they do and what they hold
+Each file should hold responsibility and ownerchip of the things they declare, that doesn't only mean that it has to free them, it also means if a data structure is defined somewhere it shouldnt be used freely evrywhere else unless it was specificaly meant to be, it should be clearly handed off to different modules using its parameters, or the structure definition should move up in the file structure. this aplies unless otherwise specified.
+
+Ambiguities should be consulted with the user.
+
+## 6. Preferences
 
 whenever you reference code explicitly say where the code is, file and line.
 
 Do not add, commit or push anything with git unless explicitly asked to.
-
-Layer separation is key, there should be clear responsibilities for each file and layers should be discussed and noted in the project notes.
 
 ---
 
